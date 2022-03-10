@@ -39,64 +39,48 @@ body {
     margin: 0 1rem;
 }
 
-.nft {
-    width: 100%;
-    border-radius: 15px;
-}
-
-.middle {
-    width: 100%;
-    border-radius: 15px;
-    background: rgba(50, 88, 82, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* display: none; */
-
-    position: absolute;
-    top: 48%;
-    left: 50%;
-}
-
-
-/* .card__sec {
+.card__img {
     position: relative;
     width: 100%;
 }
 
 .nft {
-    border-radius: 15px;
-    opacity: 1;
     display: block;
     width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-
-.middle {
-    background: rgba(0,0,0,0.8);
-    width: 100%;
-    height: 100%;
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
     border-radius: 15px;
 }
 
-.card__sec:hover .image {
-    opacity: 0.3;
+.eye {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s;
 }
 
-.card__sec:hover .middle {
+.eye:hover {
     opacity: 1;
-} */
+}
 
+.eye > * {
+    transform: translateY(20px);
+    transition: transform 0.4s;
+}
+
+.eye:hover > * {
+    transform: translateY(0);
+}
+
+.hover__green {
+    background: #06fefe46;
+    border-radius: 15px;
+    cursor: pointer;
+}
 
 .text {
     text-align: left;
