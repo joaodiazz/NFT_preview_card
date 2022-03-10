@@ -15,12 +15,14 @@
     --white: #f8fbfb;
     --primaryColor: #06fefd;
     --secondaryColor: #6e86ac;
+
+    --radius: 0.9375rem;
 }
 
 body {
     background-color: var(--bodyColor);
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -29,13 +31,12 @@ body {
 
 .container {
     max-width: 350px;
-    margin: 0 auto;
 }
 
 .card {
     background-color: var(--cardColor);
-    border-radius: 15px;
-    padding: 20px 22px;
+    border-radius: var(--radius);
+    padding: 1.25rem 1.375rem;
     margin: 0 1rem;
 }
 
@@ -47,7 +48,7 @@ body {
 .nft {
     display: block;
     width: 100%;
-    border-radius: 15px;
+    border-radius: var(--radius);
 }
 
 .eye {
@@ -78,7 +79,7 @@ body {
 
 .hover__green {
     background: #06fefe46;
-    border-radius: 15px;
+    border-radius: var(--radius);
     cursor: pointer;
 }
 
@@ -118,7 +119,7 @@ body {
 }
 
 .info img {
-    margin-right: 5px;
+    margin-right: 0.3125rem;
 }
 
 .info .price {
@@ -131,14 +132,14 @@ body {
 }
 
 .creator__img {
-    width: 32px;
+    width: 2rem;
     border: 1px solid var(--white);
     border-radius: 50%;
 }
 
 .creator p {
     color: var(--secondaryColor);
-    padding-left: 15px;
+    padding-left: 0.9375rem;
 }
 
 .creator span {
@@ -178,7 +179,7 @@ body {
     }
 
     .creator__img {
-        width: 29px;
+        width: 1.8125rem;
     }
 
     .creator p {
