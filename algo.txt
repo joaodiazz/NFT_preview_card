@@ -7,3 +7,18 @@
     Coded by <a href="#">Your Name Here</a>.
     </div>
 ]
+
+
+.card .card__sec {
+    background: #1abc9c;
+    border-radius: 17px;
+}
+
+.card .card__sec img {
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.card .card__sec:hover img {
+    opacity: 0.6;
+}
